@@ -1,0 +1,18 @@
+
+<div ng-controller="homeController">
+	<div ng-repeat="i in listas">
+		<table class="container">
+			<tr>
+				<th>{{ i.id + " - " + i.nome }}</th>
+			</tr>
+			<tr>
+				<td>
+					<div ng-repeat="item in i.itens track by $index">{{item.descricao}}</div>
+				</td>
+			</tr>
+		</table>
+		</br>
+
+	</div>
+</div>
+<p></p>
